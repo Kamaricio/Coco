@@ -1,0 +1,356 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Helvetica, sans-serif;
+}
+body{
+    background-size: cover;
+    background-position: center center;
+    background-color: whitesmoke;
+}
+a{
+    text-decoration: none;
+    color: #F4F3DF;
+
+}
+ul{
+    list-style: none;
+
+}
+.menu {
+    height: 70px;
+    width: 100%;
+    background-color: #282828;
+    display: flex;
+    justify-content: space-between;
+}
+.menu ul{
+    width: 40%;
+    display: flex;
+}
+.menu li{
+margin: 25px 15px;
+
+}
+.menu a:hover{
+    border-bottom: 3px solid #D4A847;
+    padding-bottom: 4px;
+}
+.logo{
+width: 125px;
+margin: 20px;
+margin-left: 210px;
+
+}
+.indicador{
+    border-bottom: 3px solid  #F4F3DF;
+    padding-bottom: 4px;
+}
+.entradaHome{
+    display: flex;
+    align-content: center;
+}
+.imagenEntrada{
+    width: 800px;
+    height: 500px;
+    text-align: center;
+}
+.imagenEntrada img{
+    width: 400px;
+    margin: 20px;
+}
+.textoEntrada{
+    width: 800px;
+    height: 500px;
+    
+    
+}
+.textoEntrada h1{
+    font-size: 60px;
+    font-weight: 700;
+    text-align: right;
+    margin-right: 230px;
+    margin-top: 80px;
+
+}
+.textoEntrada span{
+    color: #D4A847;
+}
+.textoEntrada p {
+    color: #282828;
+    margin-right: 230px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+.verMas{
+    margin-top: 20px;
+    padding: 3% 10%;
+    border-radius: 30px;
+    line-height: 5px;
+    background-color: #D4A847;
+    border: 0px;
+    font-weight: 700;
+    font-size: 15px;
+}
+.verMas:hover{
+    color: #F4F3DF;
+    background-color: #282828;
+}
+.conceptoCoco{
+    background-color: #282828;
+    height: 800px;
+    
+}
+.textoConcepto{
+    display: flex;
+    align-items: center;
+    color: #F4F3DF;
+    width: 100vw;
+
+}
+.textoConcepto h2 {
+    font-size: 60px;
+    margin: 30px;
+    width: 90vw;
+    padding-left: 10%;
+}
+.textoConcepto span{
+    color: #D4A847;
+}
+.textoConcepto p {
+    font-size: 20px;
+    padding-right: 160px;
+}
+.imagenesCoco{
+    text-align: center;
+    overflow: hidden;
+    display: block;
+}
+.imagenesCoco img{
+    width: 330px;
+    margin: 30px;
+}
+.cocoSiNosAma{
+    width: 100vw;
+    display: flex;
+}
+.amorCocoTexto{
+    margin: 50px 80px 20px 140px;
+}
+.amorCocoTexto h3{
+    font-size: 60px;
+    color: #282828;
+}
+.amorCocoTexto span{
+    color: #D4A847;
+}
+.amorCocoTexto p{
+    font-size: 20px;
+    color: #282828;
+    margin: 20px 100px 20px 0px;
+}
+.amorCocoImagen img{
+    width: 350px;
+    margin: 20px 100px 20px 20px;
+
+}
+footer{
+    width: 100vw;
+    height: 100px;
+    background-color: #282828;
+    color: #F4F3DF;
+    text-align: center;
+}
+footer h4{
+    padding-top: 45px;
+    font-weight: 400;
+}
+.titulosDeSeccion{
+    font-size: 60px;
+    color: #282828;
+    margin: 50px 20px 20px 210px;
+}
+.titulosDeSeccion span{
+    color: #D4A847;
+}
+.galeria{
+    width: 900px;
+    height: 1100px;
+    margin: auto;
+    margin-bottom: 40px;
+    background-color: #282828;
+}
+
+.tarjeta{
+    width: 900px;
+    height: 250px;
+    margin: 30px 30px 30px 90px;
+    position: absolute;
+    left: 0px;
+}
+.tarjeta h4{
+    font-size: 50px;
+    color: #F4F3DF;
+}
+.tarjeta p{
+    color: #F4F3DF;
+    font-size: 20px;
+
+}
+.tarjeta span {
+    color: #D4A847;
+}
+.tarjeta img{
+    width: 400px;
+}
+.tarjetaTexto{
+position: absolute;
+left: 450px;
+top: 60px;
+}
+.tarjetaDerecha {
+position: absolute;
+left: -190px;
+top: 600px;
+}
+.tarjetaDerecha img{
+    position: absolute;
+    top: -50px;
+    left: 500px;
+}
+.tarjetaUltima{
+    position: absolute;
+    top: 950px;
+}
+.seccionHistoria{
+    display: flex;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+.tituloHistoriaDeCoco p{
+    margin-right: 100px;
+
+}
+.Historia {
+    margin-left: 10px;
+}
+.imagenHistoria img {
+    width: 550px;
+    margin: 50px 100px;
+}
+.historiaPalma {
+    background-color: #282828;
+    display: flex;
+    height: 450px;
+    margin-top: -150px;
+}
+
+.seccionOscura{
+    color: #F4F3DF;
+}
+.historiaPalmaTexto p{
+    margin: 20px 30px 30px 210px;
+    color: #F4F3DF;
+    width: 450px;
+}
+.imagenPalma img {
+    width: 380px;
+    margin-left: 50px;
+}
+.botonPalma{
+    margin-left: 210px;
+    margin-top: 10px;
+}
+.botonGaleria{
+        margin-left: 0px;
+    }
+.botonPalma:hover{
+    background-color: #F4F3DF;
+    color: #282828;
+}
+.tarjetaDeEquipo{
+    display: flex;
+    background-color: #282828;
+    margin: auto;
+    width: 920px;
+    height: 250px;
+    margin-bottom: 30px;
+}
+.tarjetaDeEquipo img{
+    width: 200px;
+    height: 200px;
+    margin: 20px 40px 20px 120px;
+}
+.textosEquipo h3{
+    font-size: 45px;
+    margin: 40px 20px 10px 20px;
+    color: #D4A847;
+}
+.textosEquipo span{
+    color: #D4A847;
+}
+.textosEquipo p{
+    margin: 20px 150px 10px 20px;
+    color: #F4F3DF;
+}
+.tarjetaEqupoDerecha{
+    background-color: lightgray;
+    color: #282828;
+}
+.equipoImagenDerecha img{
+    margin: 20px 120px 20px 40px;
+    opacity: 1;
+}
+.equipoImagenDerecha p{
+    margin: 20px 0px 10px 150px;
+    color: #282828;
+
+}
+.equipoImagenDerecha h3{
+    margin: 50px 0px 10px 150px;
+}
+.contacto{
+    display: flex;
+}
+.infoContacto{
+    width: 500px;
+    height: 350px;
+    margin: 10px 30px 30px 30px;
+    margin-left: 210px;
+    display: block;
+}
+.infoContacto input{
+    width: 450px;
+    padding: 10px;
+    border: 0px;
+    border-bottom: 4px solid #282828;
+    margin: 5px 0px 30px 0px;
+    background-color: lightgray;
+}
+.mensaje{
+    height: 100px;
+    padding: 0px;
+}
+.mapa{
+    width: 500px;
+    height: 450px;
+    background-color: #D4A847;
+    margin-bottom: 30px;
+
+}
+.mapa p{
+    margin-left: 190px;
+    margin-top: 225px;
+}
+#botonEnviar {
+    padding: 20px;
+    border: 0px;
+    background-color: #D4A847;
+}
+#botonEnviar:hover{
+    background-color: #282828;
+    color: #F4F3DF;
+}
+
