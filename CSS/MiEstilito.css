@@ -46,7 +46,7 @@ margin: 25px 15px;
 .logo{
 width: 125px;
 margin: 20px;
-margin-left: 210px;
+margin-left: 5vw;
 
 }
 .indicador{
@@ -252,25 +252,27 @@ footer h4::before{
 .titulosDeSeccion{
     font-size: 60px;
     color: #282828;
-    margin: 50px 20px 20px 210px;
+    margin: 50px 20px 20px 16vw;
+    font-weight: 700;
 }
 .titulosDeSeccion span{
     color: #D4A847;
 }
 .galeria{
-    width: 900px;
+    width: 65vw;
     height: 1100px;
     margin: auto;
     margin-bottom: 40px;
     background-color: #282828;
+    flex-wrap: nowrap;
 }
 
 .tarjeta{
-    width: 900px;
+    /*width: 900px;*/
     height: 250px;
     margin: 30px 30px 30px 90px;
     position: absolute;
-    left: 0px;
+    left: 0vh;
 }
 .tarjeta h4{
     font-size: 50px;
@@ -278,33 +280,31 @@ footer h4::before{
 }
 .tarjeta p{
     color: #F4F3DF;
-    font-size: 20px;
+    font-size: 1.5vw;
 
 }
 .tarjeta  h4 span {
     color: #D4A847;
 }
 .tarjeta img{
-    width: 400px;
+    width: 90%;
 }
 .tarjetaTexto{
-position: absolute;
-left: 450px;
-top: 60px;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 5vw;
 }
 .tarjetaDerecha {
-position: absolute;
-left: -190px;
-top: 600px;
+
+    top: 640px;
+    left: 17vw;
+    
 }
-.tarjetaDerecha img{
-    position: absolute;
-    top: -50px;
-    left: 500px;
-}
+
 .tarjetaUltima{
-    position: absolute;
-    top: 950px;
+    top: 980px;
 }
 .seccionHistoria{
     display: flex;
