@@ -4,7 +4,9 @@
   "description": "este es la integracion de nodejs a coco",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css" : "sass scss/estilos.scss scss/MiEstilito.css",
+    "watch-css" : "nodemon -e scss -x \"npm run build-css\""
   },
   "repository": {
     "type": "git",
@@ -18,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/Kamaricio/Coco/issues"
   },
-  "homepage": "https://github.com/Kamaricio/Coco#readme"
+  "homepage": "https://github.com/Kamaricio/Coco#readme",
+  "dependencies": {
+    "nodemon": "^2.0.20"
+  }
 }

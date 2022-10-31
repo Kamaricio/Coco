@@ -1,0 +1,826 @@
+@charset "UTF-8";
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, p {
+  font-family: Helvetica, sans-serif;
+}
+
+body {
+  background-size: cover;
+  background-position: center center;
+  background-color: #F4F3DF;
+}
+
+a {
+  text-decoration: none;
+  color: #F4F3DF;
+}
+
+ul {
+  list-style: none;
+}
+
+.menu {
+  height: 70px;
+  width: 100vw;
+  background-color: #282828;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: flex-start;
+}
+.menu ul {
+  width: 40%;
+  display: flex;
+}
+.menu li a {
+  margin: 25px 15px;
+}
+
+.secciones a:hover {
+  border-bottom: 3px solid #D4A847;
+  padding-bottom: 4px;
+  color: #F4F3DF;
+}
+
+.logo {
+  width: 125px;
+  margin: 20px;
+  margin-left: 5vw;
+}
+
+.indicador {
+  border-bottom: 3px solid #F4F3DF;
+  padding-bottom: 4px;
+}
+
+.entradaHome {
+  display: flex;
+  align-content: center;
+  width: 100vw;
+  overflow: hidden;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  position: relative;
+  left: -110px;
+}
+
+.imagenEntrada {
+  width: 800px;
+  height: 500px;
+  text-align: center;
+}
+.imagenEntrada img {
+  width: 400px;
+  margin: 20px;
+}
+
+.textoEntrada {
+  width: 40vw;
+  height: 500px;
+  padding: 30px;
+  overflow: hidden;
+  position: relative;
+  left: -100px;
+}
+.textoEntrada h1 {
+  font-size: 3.6em;
+  font-weight: 700;
+  text-align: right;
+  margin-top: 50px;
+}
+.textoEntrada span {
+  color: #D4A847;
+}
+.textoEntrada p {
+  color: #282828;
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+.conceptoCoco {
+  background-color: #282828;
+  height: 800px;
+  overflow: hidden;
+}
+
+.textoConcepto {
+  display: flex;
+  align-items: center;
+  color: #F4F3DF;
+  width: 100vw;
+}
+.textoConcepto h2 {
+  font-size: 60px;
+  font-weight: 700;
+  margin: 30px;
+  width: 90vw;
+  padding-left: 10%;
+}
+.textoConcepto span {
+  color: #D4A847;
+}
+.textoConcepto p {
+  font-size: 20px;
+  padding-right: 160px;
+}
+
+.imagenesCoco {
+  text-align: center;
+  overflow: hidden;
+  display: block;
+}
+.imagenesCoco img {
+  width: 330px;
+  margin: 30px;
+}
+
+.cocoSiNosAma {
+  width: 100vw;
+  display: flex;
+}
+
+.amorCocoTexto {
+  margin: 50px 80px 20px 140px;
+}
+.amorCocoTexto h3 {
+  font-size: 60px;
+  color: #282828;
+  font-weight: 700;
+}
+.amorCocoTexto span {
+  color: #D4A847;
+}
+.amorCocoTexto p {
+  font-size: 20px;
+  color: #282828;
+  margin: 20px 100px 20px 0px;
+}
+
+.amorCocoImagen img {
+  width: 350px;
+  margin: 20px 100px 20px 20px;
+}
+
+.carousel-item-next, .carousel-item-prev, .carousel-item.active {
+  display: flex;
+  flex-direction: row;
+  align-content: flex-end;
+  justify-content: space-around;
+  margin: auto;
+}
+
+.carousel-control-next, .carousel-control-prev {
+  top: -500px;
+}
+
+.verMas {
+  margin-top: 20px;
+  border-radius: 30px;
+  line-height: 5px;
+  background-color: #D4A847;
+  color: #282828;
+  border: 0px;
+  font-weight: 700;
+  font-size: 15px;
+  width: 20vw;
+  height: 3vw;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.verMas span {
+  color: #282828;
+  display: inline-block;
+  z-index: 2;
+  transition: 0.5s ease-in-out;
+  letter-spacing: 0.2em;
+}
+.verMas::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  line-height: 5px;
+  background: #282828;
+  transform: scaleX(0);
+  transition: transform 0.5s ease-in-out;
+  transform-origin: right;
+}
+.verMas:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+.verMas:hover span {
+  color: #F4F3DF;
+}
+
+footer {
+  width: 100vw;
+  height: 100px;
+  background-color: #282828;
+  color: rgba(15, 15, 15, 0.4196078431);
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+footer h4 {
+  padding-top: 10px;
+  padding-right: 20px;
+  font-weight: 400;
+  font-size: 1.5em;
+}
+footer h4::before {
+  content: attr(data-text);
+  position: absolute;
+  color: #F4F3DF;
+  width: 100px;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 4px solid #F4F3DF;
+  -webkit-animation: animate 5s linear infinite;
+          animation: animate 5s linear infinite;
+  filter: drop-shadow(0 0 5px #66665f) drop-shadow(0 0 10px #a5a59b);
+}
+
+@-webkit-keyframes animate {
+  0%, 10%, 100% {
+    width: 0;
+  }
+  70%, 90% {
+    width: 300px;
+  }
+}
+
+@keyframes animate {
+  0%, 10%, 100% {
+    width: 0;
+  }
+  70%, 90% {
+    width: 300px;
+  }
+}
+.titulosDeSeccion {
+  font-size: 60px;
+  color: #282828;
+  margin: 50px 20px 20px 16vw;
+  font-weight: 700;
+}
+.titulosDeSeccion span {
+  color: #D4A847;
+}
+
+.galeria {
+  width: 65vw;
+  height: 1100px;
+  margin: auto;
+  margin-bottom: 40px;
+  background-color: #282828;
+  flex-wrap: nowrap;
+}
+
+.tarjeta {
+  /*width: 900px;*/
+  height: 250px;
+  margin: 30px 30px 30px 90px;
+  position: absolute;
+  left: 0vh;
+}
+.tarjeta h4 {
+  font-size: 50px;
+  color: #F4F3DF;
+  font-weight: 700;
+}
+.tarjeta p {
+  color: #F4F3DF;
+  font-size: 1.5vw;
+}
+.tarjeta h4 span {
+  color: #D4A847;
+}
+.tarjeta img {
+  width: 90%;
+}
+
+.tarjetaTexto {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 5vw;
+}
+
+.tarjetaDerecha {
+  top: 640px;
+  left: 17vw;
+}
+
+.tarjetaUltima {
+  top: 980px;
+}
+
+.seccionHistoria {
+  display: flex;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.tituloHistoriaDeCoco p {
+  margin-right: 100px;
+}
+
+.Historia {
+  margin-left: 10px;
+}
+
+.imagenHistoria img {
+  width: 550px;
+  margin: 50px 100px;
+}
+
+.historiaPalma {
+  background-color: #282828;
+  display: flex;
+  height: 450px;
+  margin-top: -150px;
+}
+
+.seccionOscura {
+  color: #F4F3DF;
+}
+
+.historiaPalmaTexto p {
+  margin: 20px 30px 30px 210px;
+  color: #F4F3DF;
+  width: 450px;
+}
+
+.imagenPalma img {
+  width: 380px;
+  margin-left: 50px;
+}
+
+.botonPalma {
+  margin-left: 210px;
+  margin-top: 10px;
+  color: #282828;
+}
+.botonPalma::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  line-height: 5px;
+  background: #282828;
+  transform: scaleX(0);
+  transition: transform 0.5s ease-in-out;
+  transform-origin: right;
+  color: #282828;
+}
+.botonPalma span {
+  color: #282828;
+}
+.botonPalma:hover span {
+  color: #D4A847;
+}
+
+.botonGaleria {
+  margin-left: 0px;
+}
+
+.tarjetaDeEquipo {
+  display: flex;
+  background-color: #282828;
+  margin: auto;
+  width: 920px;
+  height: 250px;
+  margin-bottom: 30px;
+}
+.tarjetaDeEquipo img {
+  width: 200px;
+  height: 200px;
+  margin: 20px 40px 20px 120px;
+}
+
+.textosEquipo h3 {
+  font-size: 45px;
+  margin: 40px 20px 10px 20px;
+  color: #D4A847;
+}
+.textosEquipo span {
+  color: #D4A847;
+}
+.textosEquipo p {
+  margin: 20px 150px 10px 20px;
+  color: #F4F3DF;
+}
+
+.tarjetaEqupoDerecha {
+  background-color: lightgray;
+  color: #282828;
+}
+
+.equipoImagenDerecha img {
+  margin: 20px 120px 20px 40px;
+  opacity: 1;
+}
+.equipoImagenDerecha p {
+  margin: 20px 0px 10px 150px;
+  color: #282828;
+}
+.equipoImagenDerecha h3 {
+  margin: 50px 0px 10px 150px;
+}
+
+.contacto {
+  display: flex;
+}
+
+.infoContacto {
+  width: 500px;
+  height: 350px;
+  margin: 10px 30px 30px 30px;
+  margin-left: 210px;
+  display: block;
+}
+.infoContacto input {
+  width: 450px;
+  padding: 10px;
+  border: 0px;
+  border-bottom: 4px solid #282828;
+  margin: 5px 0px 30px 0px;
+  background-color: lightgray;
+}
+
+.mensaje {
+  height: 100px;
+  padding: 0px;
+}
+
+.mapa {
+  width: 500px;
+  height: 450px;
+  background-color: #D4A847;
+  margin-bottom: 30px;
+}
+.mapa p {
+  margin-left: 190px;
+  margin-top: 225px;
+}
+
+#botonEnviar {
+  padding: 20px;
+  border: 0px;
+  background-color: #D4A847;
+}
+
+#botonEnviar:hover {
+  background-color: #282828;
+  color: #F4F3DF;
+}
+
+img:hover {
+  -webkit-animation: giro 5s;
+          animation: giro 5s;
+}
+
+@-webkit-keyframes giro {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(10deg);
+  }
+  20% {
+    transform: rotate(20deg);
+  }
+  30% {
+    transform: rotate(10deg);
+  }
+  40% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-10deg);
+  }
+  60% {
+    transform: rotate(-20deg);
+  }
+  70% {
+    transform: rotate(-10deg);
+  }
+  80% {
+    transform: rotate(5deg);
+  }
+  90% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes giro {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(10deg);
+  }
+  20% {
+    transform: rotate(20deg);
+  }
+  30% {
+    transform: rotate(10deg);
+  }
+  40% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-10deg);
+  }
+  60% {
+    transform: rotate(-20deg);
+  }
+  70% {
+    transform: rotate(-10deg);
+  }
+  80% {
+    transform: rotate(5deg);
+  }
+  90% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+/* medias query para laptop pequeña*/
+@media screen and (max-width: 1024px) {
+  .entradaHome {
+    height: 450px;
+    left: 0;
+  }
+  .textoEntrada {
+    width: 50vw;
+  }
+  .textoEntrada h1 {
+    font-size: 50px;
+  }
+  .textoEntrada p {
+    font-size: 18px;
+  }
+  .imagenEntrada img {
+    width: 50%;
+  }
+  .textoConcepto h2 {
+    font-size: 50px;
+  }
+  .textoConcepto p {
+    font-size: 18px;
+    padding-right: 30px;
+  }
+  .d-block {
+    display: block;
+  }
+  #Tablet {
+    display: none;
+  }
+  .carousel-item-next, .carousel-item-prev, .carousel-item.active {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-end;
+    justify-content: space-around;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  .amorCocoTexto h3 {
+    font-size: 50px;
+  }
+  .amorCocoTexto p {
+    font-size: 18px;
+    margin-right: 0px;
+  }
+}
+/* medias query para tablet*/
+@media screen and (max-width: 990px) {
+  .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: flex-start;
+    overflow: hidden;
+  }
+  .menu .logo {
+    margin-left: -100px;
+  }
+  .entradaHome {
+    height: 450px;
+    left: 0;
+  }
+  .w-15 {
+    width: 80%;
+    margin: auto;
+  }
+  .imagenCarrusel {
+    width: 40%;
+  }
+  .textoEntrada {
+    width: 80vw;
+    left: -50px;
+  }
+  .textoEntrada h1 {
+    font-size: 40px;
+  }
+  .textoEntrada p {
+    font-size: 18px;
+  }
+  .verMas {
+    width: 40vw;
+    height: 6vw;
+  }
+  .imagenEntrada img {
+    width: 70%;
+    position: relative;
+    left: 0px;
+    top: 30px;
+  }
+  .conceptoCoco {
+    height: 640px;
+  }
+  .textoConcepto h2 {
+    font-size: 40px;
+    padding-left: 30px;
+  }
+  .textoConcepto p {
+    padding-right: 30px;
+  }
+  .carousel-item-next, .carousel-item-prev, .carousel-item.active {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-end;
+    justify-content: space-around;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+  .amorCocoTexto {
+    margin: 20px 30px 20px 20px;
+  }
+  .amorCocoTexto img {
+    width: 30vw;
+    margin: 20px;
+  }
+  .amorCocoTexto h3 {
+    font-size: 40px;
+  }
+  .amorCocoTexto p {
+    font-size: 18px;
+    margin-right: 0px;
+  }
+  .botonGaleria {
+    width: 25vw;
+    height: 4vw;
+  }
+  .galeria {
+    height: 850px;
+  }
+  .galeria .tarjetaDerecha {
+    top: 560px;
+  }
+  .galeria .tarjetaUltima {
+    top: 830px;
+  }
+}
+/* medias query para mobile*/
+@media screen and (max-width: 510px) {
+  .entradaHome {
+    flex-wrap: wrap;
+    height: 650px;
+  }
+  .textoEntrada {
+    width: 100vw;
+    height: 70%;
+    left: 0px;
+    text-align: center;
+  }
+  .textoEntrada h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+  .textoEntrada p {
+    font-size: 18px;
+  }
+  .verMas {
+    width: 70vw;
+    height: 9vw;
+    margin: auto;
+  }
+  .imagenEntrada {
+    width: 100vw;
+    height: 150px;
+  }
+  .imagenEntrada img {
+    width: 40%;
+    top: 0px;
+  }
+  .conceptoCoco {
+    height: 670px;
+  }
+  .textoConcepto {
+    flex-wrap: wrap;
+  }
+  .textoConcepto h2 {
+    text-align: center;
+    padding: 0;
+  }
+  .textoConcepto p {
+    padding: 30px;
+    text-align: center;
+    padding-top: 0px;
+  }
+  #Mobile {
+    display: none;
+  }
+  .w-15 {
+    width: 55%;
+  }
+  .amorCocoTexto {
+    margin: 20px 30px 20px 20px;
+    text-align: center;
+  }
+  .amorCocoTexto img {
+    width: 30vw;
+    margin: 20px;
+  }
+  .amorCocoTexto h3 {
+    font-size: 50px;
+  }
+  .amorCocoTexto p {
+    font-size: 18px;
+    margin-right: 0px;
+    padding: 0px 20px;
+  }
+  .amorCocoImagen {
+    display: none;
+  }
+  .titulosDeSeccion {
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .galeria {
+    width: 100vw;
+    margin: auto;
+    height: 1830px;
+    border-bottom: 30px solid #F4F3DF;
+  }
+  .galeria .tarjeta {
+    margin: 30px 30px 30px 12%;
+  }
+  .galeria .tarjeta .tarjetaTexto {
+    margin-left: 0;
+    margin-top: 20px;
+    text-align: center;
+    align-items: center;
+    margin-right: 30px;
+  }
+  .galeria .tarjeta .tarjetaTexto .tituloTarjeta {
+    text-align: center;
+  }
+  .galeria .tarjeta .tarjetaTexto p {
+    font-size: 18px;
+  }
+  .galeria .tarjetaDerecha {
+    top: 1150px;
+    left: 0px;
+  }
+  .galeria .tarjetaDerecha img {
+    position: absolute;
+    top: -300px;
+  }
+  .galeria .tarjetaUltima {
+    top: 1450px;
+    left: 0%;
+  }
+}/*# sourceMappingURL=estilos.css.map */
