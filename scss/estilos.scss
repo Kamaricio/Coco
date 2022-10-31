@@ -334,42 +334,65 @@ footer{
     top: 980px;
 }
 .seccionHistoria{
+    width: 100vw;
+    height: 600px;
     display: flex;
     margin: auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 70px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
 
 }
-.tituloHistoriaDeCoco p{
-    margin-right: 100px;
+.tituloHistoriaDeCoco {
+    width: 40vw;
+    margin: 0;
 
 }
 .Historia {
     margin-left: 10px;
 }
-.imagenHistoria img {
-    width: 550px;
-    margin: 50px 100px;
+.imagenHistoria{
+    width: 40vw;
+
+    & img {
+        width: 60%;
+        margin: 50px 50px;
+    }
 }
 .historiaPalma {
     background-color: $negro;
     display: flex;
-    height: 450px;
+    height: 500px;
+    margin: auto;
     margin-top: -150px;
+    width: 100vw;
+
+    & .historiaPalmaTexto{
+        width: 50vw;
+        
+        & p{
+            margin: 20px 30px 30px 210px;
+            color: $blanco;
+            width: 450px;
+        }
+    }
+    & .imagenPalma {
+        width: 50vw;
+        & img {
+            width: 380px;
+            margin-left: 50px;
+        }
+    }
 }
 
 .seccionOscura{
     color: $blanco;
 }
-.historiaPalmaTexto p{
-    margin: 20px 30px 30px 210px;
-    color: $blanco;
-    width: 450px;
-}
-.imagenPalma img {
-    width: 380px;
-    margin-left: 50px;
-}
+
+
 .botonPalma{
     margin-left: 210px;
     margin-top: 10px;
@@ -589,6 +612,23 @@ img:hover{
             margin-right: 0px;
         }
     }
+    .historiaPalma {
+
+        & .titulosDeSeccion{
+            margin: 50px 20px 20px 50px;
+        }
+        & .historiaPalmaTexto{
+            & p{
+                margin: 20px 30px 30px 50px;
+            }
+        }
+        .botonPalma {
+            margin-left: 50px;
+        }
+    }
+    .Sobrevalorada{
+        margin-left: 50px;
+    }
 
 }
 /* medias query para tablet*/
@@ -687,6 +727,36 @@ img:hover{
     & .tarjetaUltima{
         top: 830px;
         }
+    }
+    .seccionHistoria{
+        height: 700px;
+        & .imagenHistoria{
+            margin-top: 15vw;
+            & img {
+                width: 100%;
+                margin: 0%;
+            }
+        }
+        & .tituloHistoriaDeCoco{
+            margin-left: 50px;
+        }
+    }
+    .historiaPalma{
+        height: 550px;
+        & .historiaPalmaTexto{
+            & p{
+                width: 350px;
+            }
+        }
+        & .imagenPalma{
+            & img {
+                margin-left: 0;
+                width: 350px;
+            }
+        }
+    }
+    .Sobrevalorada{
+        text-align: center;
     }
 }
 /* medias query para mobile*/
@@ -806,6 +876,50 @@ img:hover{
                 left: 0%;
             
         }
+
+    }
+    .seccionHistoria{
+        height: 900px;
+        & .imagenHistoria{
+            width: 100vw;
+            text-align: center;
+            & img {
+                width: 50%;
+                text-align: center;
+            }
+        }
+        & .tituloHistoriaDeCoco{
+            width: 80vw;
+            margin: 0;
+            text-align: center;
+
+        }
+    }
+    .historiaPalma {
+        & .imagenPalma{
+            display: none;
+        } 
+        & .historiaPalmaTexto{
+            width: 100vh;
+            margin: 0px;
+            text-align: center;
+            & p{
+                margin: auto;
+            }
+        }
+        & .titulosDeSeccion{
+            margin: 0%;
+            margin-top: 50px;
+        }
+        & .botonPalma{
+            margin: auto;
+            margin-top: 20px;
+        }
+        
+
+    }
+    .Sobrevalorada{
+        font-size: 40px;
 
     }
 }

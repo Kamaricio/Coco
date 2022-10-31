@@ -332,45 +332,61 @@ footer h4::before {
 }
 
 .seccionHistoria {
+  width: 100vw;
+  height: 600px;
   display: flex;
   margin: auto;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 70px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
 }
 
-.tituloHistoriaDeCoco p {
-  margin-right: 100px;
+.tituloHistoriaDeCoco {
+  width: 40vw;
+  margin: 0;
 }
 
 .Historia {
   margin-left: 10px;
 }
 
+.imagenHistoria {
+  width: 40vw;
+}
 .imagenHistoria img {
-  width: 550px;
-  margin: 50px 100px;
+  width: 60%;
+  margin: 50px 50px;
 }
 
 .historiaPalma {
   background-color: #282828;
   display: flex;
-  height: 450px;
+  height: 500px;
+  margin: auto;
   margin-top: -150px;
+  width: 100vw;
 }
-
-.seccionOscura {
-  color: #F4F3DF;
+.historiaPalma .historiaPalmaTexto {
+  width: 50vw;
 }
-
-.historiaPalmaTexto p {
+.historiaPalma .historiaPalmaTexto p {
   margin: 20px 30px 30px 210px;
   color: #F4F3DF;
   width: 450px;
 }
-
-.imagenPalma img {
+.historiaPalma .imagenPalma {
+  width: 50vw;
+}
+.historiaPalma .imagenPalma img {
   width: 380px;
   margin-left: 50px;
+}
+
+.seccionOscura {
+  color: #F4F3DF;
 }
 
 .botonPalma {
@@ -618,6 +634,18 @@ img:hover {
     font-size: 18px;
     margin-right: 0px;
   }
+  .historiaPalma .titulosDeSeccion {
+    margin: 50px 20px 20px 50px;
+  }
+  .historiaPalma .historiaPalmaTexto p {
+    margin: 20px 30px 30px 50px;
+  }
+  .historiaPalma .botonPalma {
+    margin-left: 50px;
+  }
+  .Sobrevalorada {
+    margin-left: 50px;
+  }
 }
 /* medias query para tablet*/
 @media screen and (max-width: 990px) {
@@ -709,6 +737,32 @@ img:hover {
   }
   .galeria .tarjetaUltima {
     top: 830px;
+  }
+  .seccionHistoria {
+    height: 700px;
+  }
+  .seccionHistoria .imagenHistoria {
+    margin-top: 15vw;
+  }
+  .seccionHistoria .imagenHistoria img {
+    width: 100%;
+    margin: 0%;
+  }
+  .seccionHistoria .tituloHistoriaDeCoco {
+    margin-left: 50px;
+  }
+  .historiaPalma {
+    height: 550px;
+  }
+  .historiaPalma .historiaPalmaTexto p {
+    width: 350px;
+  }
+  .historiaPalma .imagenPalma img {
+    margin-left: 0;
+    width: 350px;
+  }
+  .Sobrevalorada {
+    text-align: center;
   }
 }
 /* medias query para mobile*/
@@ -822,5 +876,43 @@ img:hover {
   .galeria .tarjetaUltima {
     top: 1450px;
     left: 0%;
+  }
+  .seccionHistoria {
+    height: 900px;
+  }
+  .seccionHistoria .imagenHistoria {
+    width: 100vw;
+    text-align: center;
+  }
+  .seccionHistoria .imagenHistoria img {
+    width: 50%;
+    text-align: center;
+  }
+  .seccionHistoria .tituloHistoriaDeCoco {
+    width: 80vw;
+    margin: 0;
+    text-align: center;
+  }
+  .historiaPalma .imagenPalma {
+    display: none;
+  }
+  .historiaPalma .historiaPalmaTexto {
+    width: 100vh;
+    margin: 0px;
+    text-align: center;
+  }
+  .historiaPalma .historiaPalmaTexto p {
+    margin: auto;
+  }
+  .historiaPalma .titulosDeSeccion {
+    margin: 0%;
+    margin-top: 50px;
+  }
+  .historiaPalma .botonPalma {
+    margin: auto;
+    margin-top: 20px;
+  }
+  .Sobrevalorada {
+    font-size: 40px;
   }
 }/*# sourceMappingURL=estilos.css.map */
