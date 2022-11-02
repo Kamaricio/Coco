@@ -431,7 +431,7 @@ footer h4::before {
 .tarjetaDeEquipo img {
   width: 200px;
   height: 200px;
-  margin: 20px 40px 20px 120px;
+  margin: 30px 40px;
 }
 
 .textosEquipo h3 {
@@ -443,7 +443,7 @@ footer h4::before {
   color: #D4A847;
 }
 .textosEquipo p {
-  margin: 20px 150px 10px 20px;
+  margin: 20px 30px;
   color: #F4F3DF;
 }
 
@@ -453,15 +453,15 @@ footer h4::before {
 }
 
 .equipoImagenDerecha img {
-  margin: 20px 120px 20px 40px;
+  margin: 30px 40px;
   opacity: 1;
 }
 .equipoImagenDerecha p {
-  margin: 20px 0px 10px 150px;
+  margin: 20px;
   color: #282828;
 }
 .equipoImagenDerecha h3 {
-  margin: 50px 0px 10px 150px;
+  margin: 20px;
 }
 
 .contacto {
@@ -914,5 +914,28 @@ img:hover {
   }
   .Sobrevalorada {
     font-size: 40px;
+  }
+  .tarjetaDeEquipo {
+    width: 100vw;
+    height: 500px;
+  }
+  .tarjetaDeEquipo .textosEquipo h3 {
+    margin: 0;
+  }
+  .col {
+    flex: auto;
+    align-items: center;
+  }
+  .row {
+    justify-content: center;
+    align-content: center;
+  }
+  .tarjetaEqupoDerecha .row {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  .tarjetaEqupoDerecha .row img {
+    margin: auto;
+    margin-top: 15vw;
   }
 }/*# sourceMappingURL=estilos.css.map */
