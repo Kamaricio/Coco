@@ -469,11 +469,16 @@ footer h4::before {
 }
 
 .infoContacto {
-  width: 500px;
+  width: 40vw;
   height: 350px;
   margin: 10px 30px 30px 30px;
-  margin-left: 210px;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
+  flex: inherit;
 }
 .infoContacto input {
   width: 450px;
@@ -490,14 +495,19 @@ footer h4::before {
 }
 
 .mapa {
-  width: 500px;
-  height: 450px;
+  width: 40vw;
+  height: 400px;
   background-color: #D4A847;
   margin-bottom: 30px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
 }
 .mapa p {
-  margin-left: 190px;
-  margin-top: 225px;
+  margin: auto;
 }
 
 #botonEnviar {
@@ -645,6 +655,18 @@ img:hover {
   }
   .Sobrevalorada {
     margin-left: 50px;
+  }
+  .contacto {
+    height: 800px;
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .contacto .mapa {
+    width: 100vw;
   }
 }
 /* medias query para tablet*/
@@ -937,5 +959,11 @@ img:hover {
   .tarjetaEqupoDerecha .row img {
     margin: auto;
     margin-top: 15vw;
+  }
+  .titulocontacto span {
+    font-size: 12vw;
+  }
+  .contacto input {
+    width: 100vw;
   }
 }/*# sourceMappingURL=estilos.css.map */
