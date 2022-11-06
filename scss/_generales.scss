@@ -1,0 +1,23 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Helvetica, sans-serif;
+}
+h1, h2, h3, h4, p{
+    font-family: Helvetica, sans-serif;
+
+}
+body{
+    background-size: cover;
+    background-position: center center;
+    background-color: $blanco;
+}
+a{
+    text-decoration: none;
+    color: $blanco;
+
+}
+ul{
+    list-style: none;
+
+}

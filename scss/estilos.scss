@@ -2,50 +2,9 @@ $amarillo: #D4A847;
 $blanco: #F4F3DF;
 $negro: #282828;
 
+@import "menu","generales";
 
-*{
-    padding: 0px;
-    margin: 0px;
-    font-family: Helvetica, sans-serif;
-}
-h1, h2, h3, h4, p{
-    font-family: Helvetica, sans-serif;
 
-}
-body{
-    background-size: cover;
-    background-position: center center;
-    background-color: $blanco;
-}
-a{
-    text-decoration: none;
-    color: $blanco;
-
-}
-ul{
-    list-style: none;
-
-}
-.menu {
-    height: 70px;
-    width: 100vw;
-    background-color: $negro;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-content: flex-start;
-
-  & ul {
-    width: 40%;
-    display: flex;
-}
-    & li a {
-    margin: 25px 15px;
-
-    }
-}
 
 .secciones {
     & a:hover{
