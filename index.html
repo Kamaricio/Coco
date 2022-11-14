@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Proyecto coco el cual resalta las virtudes de Coco">
@@ -13,16 +14,26 @@
     "></script>
     <link rel="stylesheet" href="scss/estilos.css">
 </head>
+
 <body>
-    <nav class="menu">
-        <a href="index.html"><img class="logo" src="./imagenes/Logo coco.png" alt="Logotipo de coco"></a>
-        <ul class="secciones">
-            <li><a class="indicador" href="index.html">Inicio</a></li>
-            <li><a href="galeria.html">Galería</a></li>
-            <li><a href="historia.html">Historia</a></li>
-            <li><a href="equipo.html">Equipo</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-        </ul>
+    <nav class="menu navbar navbar-expand-lg">
+        <div class="container">
+            <a href="index.html"><img class="logo navbar-brand" src="./imagenes/Logo coco.png" alt="Logotipo de coco"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <ul class="secciones">
+                    <li><a class="nav-link indicador" aria-current="page" href="index.html">Inicio</a></li>
+                    <li><a class="nav-link" href="galeria.html">Galería</a></li>
+                    <li><a class="nav-link" href="historia.html">Historia</a></li>
+                    <li><a class="nav-link" href="equipo.html">Equipo</a></li>
+                    <li><a class="nav-link disabled" href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </nav>
     <section class="entradaHome">
         <div class="imagenEntrada">
@@ -30,7 +41,8 @@
         </div>
         <div class="textoEntrada">
             <h1 class="titulos">La <span>Naturaleza</span> <br> tropical </h1>
-            <p>Lorem ipsum Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut</p>
+            <p>Lorem ipsum Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut</p>
             <button class="verMas">
                 <span> Ver más</span>
             </button>
@@ -39,7 +51,8 @@
     <section class="conceptoCoco">
         <div class="textoConcepto">
             <h2 class="titulosNegro">El <span>concepto</span> <br> de Coco</h2>
-            <p>Lorem ipsum Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat</p>
+            <p>Lorem ipsum Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                tincidunt ut laoreet dolore magna aliquam erat</p>
         </div>
         <!--<div class="imagenesCoco">
             <img src="./imagenes/Imagen_AI.psd.png" alt="imagen de un coco">
@@ -50,33 +63,45 @@
             <div class="carousel-inner justify-content-center">
                 <div class="carousel-item active ">
                     <img src="./imagenes/Imagen_AI.psd.png" class="d-block w-15 imagenCarrusel" alt="imagen de un coco">
-                    <div id="Tablet"><img src="./imagenes/Imagen_AI.psd.png" class="d-block w-15" alt="imagen de un coco"></div>
-                    <div id="Mobile"><img src="./imagenes/Imagen_AI.psd.png" class="d-block w-15" alt="imagen de un coco"></div>
+                    <div id="Tablet"><img src="./imagenes/Imagen_AI.psd.png" class="d-block w-15"
+                            alt="imagen de un coco"></div>
+                    <div id="Mobile"><img src="./imagenes/Imagen_AI.psd.png" class="d-block w-15"
+                            alt="imagen de un coco"></div>
                 </div>
                 <div class="carousel-item">
                     <img src="./imagenes/Imagen_AI.psd.png" class="d-block w-15 imagenCarrusel" alt="imagen de un coco">
-                    <div id="Tablet"><img src="./imagenes/Imagen_AI.psd.png" class="d-block w-15" alt="imagen de un coco"></div>
-                    <div id="Mobile"><img src="./imagenes/Imagen_AI.psd.png" class="d-block w-15" alt="imagen de un coco"></div>
+                    <div id="Tablet"><img src="./imagenes/Imagen_AI.psd.png" class="d-block w-15"
+                            alt="imagen de un coco"></div>
+                    <div id="Mobile"><img src="./imagenes/Imagen_AI.psd.png" class="d-block w-15"
+                            alt="imagen de un coco"></div>
                 </div>
                 <div class="carousel-item">
                     <img src="./imagenes/Imagen_AI.psd.png" class="d-block w-15 imagenCarrusel" alt="imagen de un coco">
-                    <div id="Tablet"> <img src="./imagenes/Imagen_AI.psd.png" class="d-block w-15" alt="imagen de un coco"></div>
-                    <div id="Mobile"><img src="./imagenes/Imagen_AI.psd.png" class="d-block w-15" alt="imagen de un coco"></div>
+                    <div id="Tablet"> <img src="./imagenes/Imagen_AI.psd.png" class="d-block w-15"
+                            alt="imagen de un coco"></div>
+                    <div id="Mobile"><img src="./imagenes/Imagen_AI.psd.png" class="d-block w-15"
+                            alt="imagen de un coco"></div>
+                </div>
+                <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
     </section>
     <section class="cocoSiNosAma">
         <div class="amorCocoTexto">
             <h3>El Coco <br> <span> si nos ama </span> </h3>
-            <p>Lorem ipsum Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate </p>
+            <p>Lorem ipsum Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut Lorem ipsum dolor sit amet, consectetuer
+                adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip
+                ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate </p>
             <button class="verMas"><span>Opciones de Coco</span></button>
         </div>
         <div class="amorCocoImagen">
@@ -88,8 +113,9 @@
         <h4 data-text="&nbsp;Hola soy un footer de Coco&nbsp;">&nbsp;Hola soy un footer de Coco&nbsp;</h4>
         <div class="spinner-border text-warning rueda" role="status">
             <span class="visually-hidden">Loading...</span>
-            </div>
+        </div>
     </footer>
-    
+
 </body>
+
 </html>

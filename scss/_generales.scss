@@ -11,6 +11,8 @@ body{
     background-size: cover;
     background-position: center center;
     background-color: $blanco;
+    width: 100vw;
+    overflow-x: hidden;
 }
 a{
     text-decoration: none;

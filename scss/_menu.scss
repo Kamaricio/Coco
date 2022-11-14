@@ -1,5 +1,5 @@
 .menu {
-    height: 70px;
+
     width: 100vw;
     background-color: $negro;
     display: flex;
@@ -9,12 +9,24 @@
     flex-direction: row;
     align-content: flex-start;
 
+
     & ul {
-    width: 40%;
-    display: flex;
-}
+        width: 40%;
+        display: flex;
+    }
+
     & li a {
-    margin: 25px 15px;
+        margin: 0px 15px;
+        
 
     }
+    .nav-link{
+        color: #F4F3DF;
+
+    }
+}
+
+.indicador {
+    border-bottom: 3px solid $blanco;
+    padding-bottom: 4px;
 }

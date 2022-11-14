@@ -14,15 +14,24 @@
     <link rel="stylesheet" href="scss/estilos.css">
 </head>
 <body>
-    <nav class="menu">
-        <a href="index.html"><img class="logo" src="./imagenes/Logo coco.png" alt="Logotipo de coco"></a>
-        <ul class="secciones">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="galeria.html">Galería</a></li>
-            <li><a  class="indicador" href="historia.html">Historia</a></li>
-            <li><a href="equipo.html">Equipo</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-        </ul>
+    <nav class="menu navbar navbar-expand-lg">
+        <div class="container">
+            <a href="index.html"><img class="logo navbar-brand" src="./imagenes/Logo coco.png" alt="Logotipo de coco"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <ul class="secciones">
+                    <li><a class="nav-link" aria-current="page" href="index.html">Inicio</a></li>
+                    <li><a class="nav-link" href="galeria.html">Galería</a></li>
+                    <li><a class="nav-link indicador" href="historia.html">Historia</a></li>
+                    <li><a class="nav-link" href="equipo.html">Equipo</a></li>
+                    <li><a class="nav-link disabled" href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </nav>
     <section class="seccionHistoria ">
         <div class="imagenHistoria">
